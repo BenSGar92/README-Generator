@@ -1,8 +1,11 @@
 const inquirer = require ('inquirer');
 const fs = require ('fs');
+const util = require ('util');
 
-inquirer
-  .prompt([
+const writeFileAsync = util.promisify(fs.writeFile);
+
+const promptUser = () => {
+    return inquirer.prompt([
     {
         type: "input",
         name: "title",
@@ -34,7 +37,7 @@ inquirer
         message: "What are the test instructions?"
     },
     {
-        type: "checkbox",
+        type: "list",
         name: "license",
         choices: [
             "Apache",
@@ -53,12 +56,12 @@ inquirer
         type: "input",
         name: "email",
         message: "What is your email address?"
-    },  
+    }
   ])
-.then(function(data) {
-    console.log(data);
-    const boilerREADME =`
-       
+};
+
+const generateHTML = (data) => {
+        return `  
 # ${data.title}
 
 # Table of Contents
@@ -88,19 +91,15 @@ inquirer
 
 - [License])https://opensource.org/Licenses/${data.license})
 `
+};
 
-
-
-
-
-
-    fs.writeFile("README.md", boilerREADME, function(err) {
-
-      if (err) {
-        return console.log(err);
-      }
-
-      console.log("Success!");
-      
-  });
-});
+const init = async() => {
+    try {
+        const data = await promptUser();
+        const html = generateHTML(data);
+        await writeFileAsync("README.md", html);
+        } catch (error) {
+            console.log(error);
+    }
+};
+init();

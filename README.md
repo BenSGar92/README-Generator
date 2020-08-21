@@ -1,6 +1,5 @@
-
-       
-# README Generator
+  
+# y
 
 # Table of Contents
 
@@ -11,20 +10,19 @@
 - # [Test](#test)
 
 ## Description:
-![License](https://img.shields.io/badge/License--blue.svg "License Badge")
-
-    Generates a README.md file
+![License](https://img.shields.io/badge/License-MIT-blue.svg "License Badge")
+    y
 ## Installation:
-    press install
+    y
 ## Usage
-    To generate a README.md file
+    y
 ## Contributing
     undefined
 ## Test
-    IDK
+    y
 ## Credit
 
 ## License
     For more information about the License, click on the link below.
 
-- [License])https://opensource.org/Licenses/)
+- [License])https://opensource.org/Licenses/MIT)
