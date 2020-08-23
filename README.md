@@ -1,28 +1,34 @@
   
-# y
+# README Generator
 
 # Table of Contents
 
-- # [Description](#description)
-- # [Installation](#installation) 
-- # [Usage](#usage)
-- # [Contributing](#contributing)
-- # [Test](#test)
+- [Description](#description)
+- [Installation](#installation) 
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Test](#test)
+- [Questions](#questions)
+- [License](#license)
 
 ## Description:
 ![License](https://img.shields.io/badge/License-MIT-blue.svg "License Badge")
-    y
+
+    This application will generate a README.md file
 ## Installation:
-    y
+    npm i
 ## Usage
-    y
+    Used to generate a README.md file
 ## Contributing
-    undefined
+    Ben Gardner
 ## Test
-    y
-## Credit
+    No instructions
+## Questions
+    For any questions about this application please reach out to me via github or email:
+    Email:bensgar92@gmail.com
+    Github:BenSGar92
 
 ## License
     For more information about the License, click on the link below.
 
-- [License])https://opensource.org/Licenses/MIT)
+- [License](https://opensource.org/Licenses/MIT)

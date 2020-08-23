@@ -66,11 +66,13 @@ const generateHTML = (data) => {
 
 # Table of Contents
 
-- # [Description](#description)
-- # [Installation](#installation) 
-- # [Usage](#usage)
-- # [Contributing](#contributing)
-- # [Test](#test)
+- [Description](#description)
+- [Installation](#installation) 
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Test](#test)
+- [Questions](#questions)
+- [License](#license)
 
 ## Description:
 ![License](https://img.shields.io/badge/License-${data.license}-blue.svg "License Badge")
@@ -81,15 +83,18 @@ const generateHTML = (data) => {
 ## Usage
     ${data.usage}
 ## Contributing
-    ${data.contributing}
+    ${data.contribution}
 ## Test
     ${data.test}
-## Credit
+## Questions
+    For any questions about this application please reach out to me via github or email:
+    Email:${data.email}
+    Github:${data.username}
 
 ## License
     For more information about the License, click on the link below.
 
-- [License])https://opensource.org/Licenses/${data.license})
+- [License](https://opensource.org/Licenses/${data.license})
 `
 };
 
